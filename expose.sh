@@ -10,7 +10,7 @@ if [ -f "$topdir/_config.sh" ]; then
   . "$topdir/_config.sh"
 fi
 
-site_title=${site_title:-"My Awesome Photos"}
+site_title=${site_title:-"hafur.photos"}
 
 theme_dir=${theme_dir:-"theme1"}
 
@@ -22,7 +22,7 @@ resolution=(3840 2560 1920 1280 1024 640)
 jpeg_quality=${jpeg_quality:-92}
 
 # jpeg image autorotation
-autorotate=${autorotate:-true}
+autorotate=${autorotate:-false}
 
 # formats to encode to, list in order of preference. Available formats are vp9, vp8, h264, h265, ogv
 video_formats=(h264 vp8)
@@ -49,9 +49,9 @@ default_palette=${default_palette:-("#000000" "#222222" "#444444" "#666666" "#99
 override_textcolor=${override_textcolor:-true} # use given text color instead of extracted palette on body text.
 
 # display a toggle button to show/hide the text
-text_toggle=${text_toggle:-true}
+text_toggle=${text_toggle:-false}
 
-social_button=${social_button:-true}
+social_button=${social_button:-false}
 
 # option to put the full image/video in a zip file with a license readme.txt
 download_button=${download_button:-false}
