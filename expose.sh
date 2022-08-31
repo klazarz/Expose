@@ -10,13 +10,13 @@ if [ -f "$topdir/_config.sh" ]; then
   . "$topdir/_config.sh"
 fi
 
-site_title=${site_title:-"hafur.photos"}
+site_title=${site_title:-"photos.hafur.com"}
 
 theme_dir=${theme_dir:-"theme1"}
 
 # widths to scale images to (heights are calculated from source images)
 # you might want to change this for example, if your images aren't full screen on the browser side
-resolution=(3840 2560 1920 1280 1024 640)
+resolution=(1280 1024 )
 
 # jpeg compression quality for static photos
 jpeg_quality=${jpeg_quality:-92}
